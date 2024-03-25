@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.testi {
+    background: $bgGray;
+    padding: 100px 0;
+
+    .left-col {
+
+        h3 {
+            font-size: 38px;
+            font-weight: 600;
+            line-height: 50px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+}

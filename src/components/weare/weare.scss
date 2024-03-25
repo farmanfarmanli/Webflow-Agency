@@ -1,0 +1,47 @@
+@import '../../global.scss';
+
+.we {
+
+    .container {
+
+        .row {
+            background-color: $bgGray;
+            align-items: center;
+
+            .col-lg-6 {
+                padding: 50px;
+
+                .boxes {
+
+                    h3 {
+                        font-size: 30px;
+                        font-weight: 600;
+                        line-height: 51px;
+                    }
+
+
+                    .paragraph {
+                        margin: 0;
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+        span {
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $darkBlue;
+        }
+
+        img {
+            padding: 0;
+        }
+    }
+}

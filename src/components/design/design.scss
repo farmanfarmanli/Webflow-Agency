@@ -1,0 +1,68 @@
+@import '../../global.scss';
+
+.design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: $bgGray;
+    padding: 100px 0;
+
+    .design-head {
+
+        span {
+            color: $darkBlue;
+            font-weight: 500;
+        }
+
+        h1 {
+            color: $darkBlue;
+            font-weight: 600;
+            font-size: 45px;
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin: 15px 0;
+
+
+        .box {
+            width: 400px;
+            background-color: $white;
+            text-align: start;
+            padding: 25px; 
+            cursor: pointer;
+            transition: 0.6s;
+
+            &:hover {
+                width: 420px;
+                box-shadow: 1px 1px 14px 0px rgba(28,30,83,0.56);
+            }
+
+            img {
+                width: 25px;
+            }
+
+            h5 {
+                margin: 20px 0;
+                color: $darkBlue;
+                font-size: 22px;
+                font-weight: 600;
+                width: 75%;
+                cursor: text;
+            }
+
+            p {
+                color: $darkBlue;
+                font-weight: 400;
+                font-size: 15px;
+                width: 80%;
+                cursor: text;
+            }
+        }
+    }
+}

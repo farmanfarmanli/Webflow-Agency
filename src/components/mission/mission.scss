@@ -1,0 +1,37 @@
+@import '../../global.scss';
+
+.mission {
+    background-color: $bgColor;
+    padding: 80px 0;
+
+    .row {
+        justify-content: space-around;
+        margin-bottom: 80px;
+
+        span {
+            font-weight: 500;
+            color: $darkBlue;
+        }
+
+        h3 {
+            font-size: 38px;
+            font-weight: 600;
+            color: $darkBlue;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $darkBlue;
+        }
+
+        img {
+            width: 85%;
+
+            @include mobile {
+                margin-bottom: 25px;
+                width: 80%;
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@import '../../global.scss';
+
+.team {
+    background-color: $bgGray;
+    padding: 90px 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    .row {
+        gap: 30px;
+
+        h2 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 64px;
+        }
+
+        .team-box {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 40px 0;
+            background-color: $white;
+
+            .img-box {
+                position: relative;
+
+                .imgs {
+                    position: relative;
+
+                    img {
+                        width: 170px;
+                    }
+
+                    .ellipse {
+                        position: absolute;
+                        display: none;
+                        left: 0;
+                        bottom: 0;
+                        animation: fadeIn 0.6s ease;
+                    }
+
+                    &:hover .ellipse {
+                        display: block;
+                    }
+                }
+
+                .icon-box {
+                    display: none;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50px;
+                    z-index: 1;
+                    color: $white;
+                    border-radius: 50%;
+                    animation: slideUp 1.3s ease;
+
+                    .icon {
+                        margin-right: 10px;
+
+                        &:hover {
+                            color: $royalBlue;
+                            transform: rotate(360deg);
+                            transition: 0.6s;
+                        }
+                    }
+                }
+
+                &:hover .icon-box {
+                    display: block;
+                }
+            }
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            margin: 0;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+
+        }
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    50% {
+        transform: translateY(-8%);
+    }
+
+    65% {
+        transform: translateY(4%);
+    }
+
+    80% {
+        transform: translateY(-4%);
+    }
+
+    95% {
+        transform: translateY(2%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      transform: scale(0);
+      opacity: 0.0;
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    80% {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

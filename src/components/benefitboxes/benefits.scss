@@ -1,0 +1,74 @@
+@import '../../global.scss';
+
+
+.benefits {
+    padding: 80px 0;
+
+    h2 {
+            color: $darkBlue;
+            font-weight: 600;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 45px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+        align-items: center;
+
+        @include mobile {
+            text-align: center;
+        }
+
+        .swiper {
+
+            @include mobile {
+                margin-top: 30px;
+            }
+        }
+
+
+        .box {
+            width: 400px;
+            background-color: $white;
+            text-align: start;
+            padding: 25px;
+            cursor: pointer;
+            transition: 0.6s;
+            background-color: $bgGray;
+            margin-top: 20px;
+
+            &:hover {
+                width: 420px;
+                box-shadow: 1px 1px 14px 0px rgba(28, 30, 83, 0.56);
+            }
+
+            img {
+                width: 25px;
+            }
+
+            h5 {
+                margin: 20px 0;
+                color: $darkBlue;
+                font-size: 22px;
+                font-weight: 600;
+                width: 75%;
+                cursor: text;
+            }
+
+            p {
+                color: $darkBlue;
+                font-weight: 400;
+                font-size: 15px;
+                width: 80%;
+                cursor: text;
+            }
+        }
+
+        .logos {
+            width: 140px;
+        }
+    }
+}

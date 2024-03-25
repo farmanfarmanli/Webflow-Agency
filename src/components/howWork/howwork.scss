@@ -1,0 +1,45 @@
+@import '../../global.scss';
+
+.work {
+    padding: 90px;
+    background-color: $bgGray;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: $darkBlue;
+    }
+
+    p {
+        color: $darkBlue;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $royalBlue;
+        font-weight: 600;
+
+        .arrow {
+            color: $royalBlue;
+            margin-left: 10px;
+        }
+    }
+
+    .line {
+        margin-bottom: 35px;
+
+        img {
+            width: 40px;
+        }
+
+        h3 {
+            font-weight: 500;
+            color: $darkBlue;
+            margin: 10px 0;
+        }
+    }
+
+
+}

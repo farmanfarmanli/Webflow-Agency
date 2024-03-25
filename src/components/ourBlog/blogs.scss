@@ -1,0 +1,61 @@
+@import '../../global.scss';
+
+.blogs {
+    padding: 100px 0;
+
+    .blog-head {
+
+        h2 {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 70px;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 40px;
+
+        img {
+            width: 95%;
+        }
+
+        span {
+            color: #777990;
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0;
+            margin-top: 10px;
+        }
+
+        p {
+            color: #777990;
+            margin: 0;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .link-span {
+            text-decoration: none;
+            color: $darkBlue;
+            font-weight: 500;
+            transition: 0.6s;
+            cursor: pointer;
+
+            &:hover {
+                color: $royalBlue;
+
+                .arrows {
+                    margin-left: 15px;
+                    transition: 0.6s;
+                }
+            }
+
+        }
+    }
+}

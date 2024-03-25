@@ -1,0 +1,31 @@
+@import '../../global.scss';
+
+.about-hero {
+    padding: 80px 0;
+
+    span {
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    h1 {
+        font-size: 54px;
+        color: $blue;
+        margin-bottom: 30px;
+
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+
+    p {
+        text-align: justify;
+        width: 65%;
+        color: $blue;
+    }
+
+    img {
+        width: 80%;
+    }
+}

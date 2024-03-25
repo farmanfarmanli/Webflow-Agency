@@ -1,0 +1,20 @@
+$blue: #1C1E53;
+$royalBlue: #2405F2;
+$darkBlue: #282938;
+$gold: #FCD980;
+$white: #fff;
+$black: #000;
+$gray: #BBBBCB;
+$borderColor: #F4F6FC33;
+$bgGray: #F4F6FC;
+$bgColor: #EEF4FA;
+$gradient: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}
