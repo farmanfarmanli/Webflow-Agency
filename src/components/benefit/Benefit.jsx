@@ -8,7 +8,6 @@ const Benefit = () => {
     return (
         <div className='benefit'>
             <Container>
-                <h2>The benefits of working<br></br> with us</h2>
                 <Row>
                     <Benefits />
                 </Row>
